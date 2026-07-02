@@ -1,0 +1,4 @@
+class Solution:
+    def countSeniors(self, details: List[str]) -> int:
+        elders = sum(1 for passenger in details if (int(passenger[-4:-2])) > 60)
+        return elders 
